@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+// COLORS
+$light-gray: #f5f5f5;
+$medium-gray: #6e6e6e;
+$dark-gray: #4a4a4a;
+$black: #0a0a0a;
+$white: #fefefe;
+$brand-primary: #ff6c00;
+
+// FONTS
+$body-font-color: #6e6e6e;
+$body-font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+
+$font-size-global: 16px;
+$font-size-small: 20px;
+$font-size-medium: 24px;
+$font-size-large: 32px;
+$font-size-xlarge: 40px;
+
+// CONTAINER
+$container-max-width: 1200px !default;
+$container-xsmall-max-width: 320px !default;
+$container-small-max-width: 640px !default;
+$container-medium-max-width: 860px !default;

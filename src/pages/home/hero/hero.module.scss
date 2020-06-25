@@ -1,0 +1,60 @@
+@import "../../../index.scss";
+
+.hero {
+  background-color: $light-gray;
+  position: relative;
+  overflow: hidden;
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    @media (max-width: $container-medium-max-width) {
+      padding: 0;
+    }
+    .image {
+      @media (min-width: $container-medium-max-width) {
+        max-width: 400px;
+        max-height: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        @media (min-width: $container-medium-max-width) {
+          transform: scale(1.1);
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .info {
+    width: 100%;
+    background-color: rgba($medium-gray, 0.6);
+    padding: 16px 10px;
+    @media (max-width: $container-medium-max-width) {
+      position: absolute;
+      bottom: 0;
+    }
+    h1,
+    h2,
+    h3 {
+      font-family: $body-font-family;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+}

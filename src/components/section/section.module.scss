@@ -1,0 +1,32 @@
+@import "../../index.scss";
+
+.section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.containerMedium {
+  max-width: $container-medium-max-width;
+  margin: 0 auto;
+}
+
+.containerFullWidth {
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+.lightBack {
+  background-color: white;
+}
+
+.darkerBack {
+  background-color: $light-gray;
+}
+
+.darkestBack {
+  background-color: $dark-gray;
+  h2,
+  p {
+    color: white;
+  }
+}

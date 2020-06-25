@@ -1,0 +1,19 @@
+@import "../../../../index.scss";
+
+.skill {
+  margin-bottom: 40px;
+  @media (min-width: $container-medium-max-width) {
+    width: 45%;
+  }
+}
+
+.progress {
+  background-color: $light-gray;
+  height: 12px;
+}
+
+.progressMeter {
+  background-color: $brand-primary;
+  transition-duration: 3s;
+  height: 100%;
+}
