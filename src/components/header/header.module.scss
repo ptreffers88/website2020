@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@import "../../app.module.scss";
 
 .header {
   position: fixed;
@@ -12,7 +12,7 @@
     height: 40px;
     position: relative;
 
-    object {
+    svg {
       width: 40px;
       height: auto;
       position: relative;

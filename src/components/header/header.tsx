@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { ReactSVG } from "react-svg";
 
 import styles from "./header.module.scss";
-import { Link } from "react-router-dom";
 
 export interface IHeaderProps {
   logo: string;
@@ -11,11 +12,11 @@ const Header = (props: IHeaderProps) => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <span className={styles.logo}>
+        <div className={styles.logo}>
           <Link to="/">
-            <object data={props.logo} type="image/svg+xml" aria-label=""></object>
+            <ReactSVG src={props.logo} />
           </Link>
-        </span>
+        </div>
       </div>
     </header>
   );

@@ -1,7 +1,8 @@
 import React from "react";
-import { portfolioItems } from "../../api/portfolio-api";
+
 import { Section } from "../../components/section/section";
 import { Projectcard } from "../../components/projects/project-card/project-card";
+import { portfolioItems } from "../../data/portfolio";
 
 const PortfolioSingle = (): JSX.Element => {
   const portfolio = portfolioItems;

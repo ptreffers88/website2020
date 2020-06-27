@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { isInViewport } from "../../../../utils/isInViewport";
 
 import styles from "./skill-card.module.scss";
@@ -12,7 +13,7 @@ const SkillCard = (props: ISkillCardProps): JSX.Element => {
   const [finalpercentage, setFinalpercentage] = useState<number>(0);
 
   window.addEventListener("scroll", function () {
-    let elem = document.querySelector("span");
+    let elem = document.querySelector("#progress");
     if (elem && isInViewport(elem)) {
       setFinalpercentage(props.percentage);
     }
@@ -21,10 +22,9 @@ const SkillCard = (props: ISkillCardProps): JSX.Element => {
   return (
     <div className={styles.skill}>
       <h3 className={styles.name}>{props.name}</h3>
-      <div className={styles.progress}>
+      <div className={styles.progress} id="progress">
         <div className={styles.progressMeter} style={{ width: `${finalpercentage}% ` }} role="progressbar"></div>
       </div>
-      <span />
     </div>
   );
 };

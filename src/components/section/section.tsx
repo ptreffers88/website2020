@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+
 import styles from "./section.module.scss";
 
 export interface ISectionProps {
@@ -14,7 +15,7 @@ type ISectionBackground = "light" | "darker" | "darkest";
 
 const Section = (props: ISectionProps) => {
   return (
-    <div className={`${styles.section} ${styles.standardGutter} ${getStyleBackground(props.background)}`}>
+    <div className={`${styles.section} ${styles.gutterStandard} ${getStyleBackground(props.background)}`}>
       <div className={getSizeContainer(props.size || "medium")}>
         <h2>{props.title}</h2>
         {props.children}

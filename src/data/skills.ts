@@ -6,7 +6,7 @@ export const skills = [
   },
   {
     id: 2,
-    name: "JavaScript / jQuery",
+    name: "JavaScript",
     percentage: 30,
   },
   {
@@ -21,31 +21,21 @@ export const skills = [
   },
   {
     id: 5,
-    name: "Photoshop",
-    percentage: 80,
-  },
-  {
-    id: 6,
-    name: "Bootstrap",
-    percentage: 70,
-  },
-  {
-    id: 7,
     name: "SEO",
     percentage: 90,
   },
   {
-    id: 8,
+    id: 6,
+    name: "Photoshop",
+    percentage: 80,
+  },
+  {
+    id: 7,
     name: "Git / Github",
     percentage: 75,
   },
   {
-    id: 9,
-    name: "Gulp / NPM",
-    percentage: 80,
-  },
-  {
-    id: 10,
+    id: 8,
     name: "WordPress (theming)",
     percentage: 70,
   },

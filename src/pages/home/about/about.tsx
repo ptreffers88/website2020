@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Section } from "../../../components/section/section";
 
 const About = (): JSX.Element => {

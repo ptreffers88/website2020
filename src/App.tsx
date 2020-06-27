@@ -1,9 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import { Header } from "./components/header/header";
 import LOGO from "./assets/img/logo.svg";
 import { Home } from "./pages/home/home";
-import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
 
 function App() {

@@ -1,6 +1,7 @@
 import React from "react";
-import PROFILE_PIC from "../../assets/img/profile-pic.jpg";
+
 import { Hero } from "./hero/hero";
+import PROFILE_PIC from "../../assets/img/profile-pic.jpg";
 import { About } from "./about/about";
 import { Projects } from "../../components/projects/projects";
 import { Skills } from "./skills/skills";
