@@ -14,8 +14,8 @@ const Projects = (): JSX.Element => {
           {portfolioItems && portfolioItems.length > 0 && (
             <>
               {portfolioItems.map((project, index) => (
-                <div className={styles.projectCardContainer}>
-                  <Projectcard key={index} image={project.imageDesktop} name={project.name} />
+                <div className={styles.projectCardContainer} key={index}>
+                  <Projectcard image={project.imageDesktop} name={project.name} />
                 </div>
               ))}
             </>

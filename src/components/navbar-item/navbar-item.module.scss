@@ -1,0 +1,18 @@
+@import "../../app.module.scss";
+
+.link {
+  text-decoration: none;
+  color: $medium-gray;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: $font-size-global;
+  display: block;
+  .active,
+  &:hover {
+    color: $brand-primary;
+  }
+}
+
+.secondary {
+  padding-left: 20px;
+}

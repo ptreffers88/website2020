@@ -8,15 +8,29 @@
   padding: 5px 20px;
   background-color: white;
   border-bottom: 2px solid $light-gray;
-  .logo {
-    height: 40px;
-    position: relative;
+}
 
-    svg {
-      width: 40px;
-      height: auto;
-      position: relative;
-      z-index: -1;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  position: relative;
+  cursor: pointer;
+  .bar {
+    height: 2px;
+    width: 20px;
+    background-color: $medium-gray;
+    display: block;
+    &:nth-child(2) {
+      margin: 4px 0;
+    }
+  }
+  &:hover {
+    .bar {
+      background-color: $brand-primary;
     }
   }
 }
