@@ -4,6 +4,7 @@ import { Header } from "./components/header/header";
 import { Home } from "./pages/home/home";
 import { Footer } from "./components/footer/footer";
 import { PortfolioSingle } from "./pages/portfolio-single/portfolio-single";
+import { Projects } from "./components/projects/projects";
 
 const App = (): JSX.Element => {
   return (
@@ -13,8 +14,11 @@ const App = (): JSX.Element => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/portfolio/:id">
+        <Route exact path="/projects/:id">
           <PortfolioSingle />
+        </Route>
+        <Route exact path="/projects/">
+          <Projects />
         </Route>
       </Switch>
       <Footer />

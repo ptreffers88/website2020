@@ -2,43 +2,44 @@
 
 .menu {
   position: absolute;
-  right: -100%;
   top: 0;
+  right: 0;
+  width: 100vw;
   height: 100vh;
-  width: 300px;
-  padding: 20px 40px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0);
   transition: all 0.3s ease-in-out;
   visibility: hidden;
-  @media (max-width: $container-small-max-width) {
-    width: 80%;
-    padding: 20px;
-  }
-  &::before {
-    content: "";
+
+  .wrapper {
     position: absolute;
-    z-index: -1;
+    right: -100%;
     top: 0;
-    right: 0;
-    width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0);
-    transition: all 1s ease-in-out;
+    width: 300px;
+    padding: 10px 30px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.3s ease-in-out;
     visibility: hidden;
+    z-index: 5;
+    @media (max-width: $container-small-max-width) {
+      width: 80%;
+      padding: 20px;
+    }
   }
   &Open {
     visibility: visible;
-    background-color: rgba(255, 255, 255, 1);
-    right: 0;
-    &::before {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .wrapper {
       visibility: visible;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(255, 255, 255, 1);
+      right: 0;
     }
   }
 }
 
 .header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   .close {
@@ -46,8 +47,8 @@
     cursor: pointer;
     .bar {
       position: absolute;
-      top: 0;
-      right: -30px;
+      top: 20px;
+      right: -10px;
       height: 2px;
       width: 24px;
       background-color: $medium-gray;

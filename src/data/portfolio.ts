@@ -27,13 +27,13 @@ export const portfolioItems = [
       "Autobedrijf Scholten is een autobedrijf dat zich profileert als full-service. Zij doen alles omtrent auto’s; van apk- keuring en airco onderhoud tot auto reparatie en verkoop van auto’s.Dat alles met de klant in gedachten.Hier ben je geen nummertje!",
     purposeTitle: "Een website die zowel past bij de eindgebruikers als de klant",
     purposeText:
-      "Autobedrijf Scholten is bij ons terecht gekomen naar aanleiding van een gesprek die we hebben gehad op een door ons georganiseerd congres. De eigenaar vondt dat zijn website niet meer paste bij de professionaliteit die hij graag uitstraalt als klanten zijn showroom en garage bezoeken. Ook was hij niet goed vindbaar in Google en wist hij dat hij met de tijd mee moest gaan.Dat hij zijn klanten ook op mobiele apparaten goed moet kunnen bedienen(iets wat zijn vorige website niet kon doen). Uiteraard konden wij hem helpen en was het aan mij om deze klant te helpen aan een goede functionele website!",
+      "Autobedrijf Scholten is bij ons terecht gekomen naar aanleiding van een gesprek die we hebben gehad op een door ons georganiseerd congres. De eigenaar vondt dat zijn website niet meer paste bij de professionaliteit die hij graag uitstraalt als klanten zijn showroom en garage bezoeken. Ook was hij niet goed vindbaar in Google en wist hij dat hij met de tijd mee moest gaan.Dat hij zijn klanten ook op mobiele apparaten goed moet kunnen bedienen (iets wat zijn vorige website niet kon doen). Uiteraard konden wij hem helpen en was het aan mij om deze klant te helpen aan een goede functionele website!",
     roleTitle: "Mijn rol bij Bovemij Connect",
     roleText:
       "Namens Bovemij Connect heb ik voor Autobedrijf Scholten een nieuwe gebruiksvriendelijke website mogen ontwikkelen die beter aansluit bij hun dienstverlening en offline uitstraling. Ik ben verantwoordelijk geweest voor het in kaart brengen van de wensen van de klant, het ontwerp van de website en de realisatie ervan met WordPress. Uiteraard heb ik de website responsive gemaakt zodat deze ook op mobiele apparaten perfect functioneert en er goed uitziet!",
     uptodateTitle: "Altijd up-to-date",
     uptodateText:
-      "Nadat de website gelanceerd was heb ik de klant ontzorgt door hem te woord te staan als hij vragen had over de website. Daarnaast heb ik de klant ook ondersteund bij het plaatsen van nieuwe content. Ik zorgde ervoor dat de website continue werd bijgewerkt met(beveiligings) updates en handige functionaliteiten voor zowel de klant als de eindgebruiker.Op deze manier was de website altijd up- to - date!",
+      "Nadat de website gelanceerd was heb ik de klant ontzorgt door hem te woord te staan als hij vragen had over de website. Daarnaast heb ik de klant ook ondersteund bij het plaatsen van nieuwe content. Ik zorgde ervoor dat de website continue werd bijgewerkt met(beveiligings) updates en handige functionaliteiten voor zowel de klant als de eindgebruiker.Op deze manier was de website altijd up-to-date!",
     imageDesktop: imageScholtenDesktop,
     imageMobile: imageScholtenMobile,
   },
@@ -49,7 +49,7 @@ export const portfolioItems = [
       "Namens Bovemij Connect heb ik voor Reinders Rekreatie een nieuwe gebruiksvriendelijke website mogen ontwikkelen die beter aansluit bij hun dienstverlening en offline uitstraling. Op basis van het ontwerp ben ik verantwoordelijk geweest voor de realisatie ervan met WordPress. Uiteraard heb ik de website responsive gemaakt zodat deze ook op mobiele apparaten perfect functioneert en er goed uitziet!",
     uptodateTitle: "Altijd up-to-date",
     uptodateText:
-      "Nadat de website gelanceerd was heb ik de klant ontzorgt door hem te woord te staan als hij vragen had over de website. Daarnaast heb ik de klant ook ondersteund bij het plaatsen van nieuwe content. Ik zorgde ervoor dat de website continue werd bijgewerkt met(beveiligings) updates en handige functionaliteiten voor zowel de klant als de eindgebruiker.Op deze manier was de website altijd up- to - date!",
+      "Nadat de website gelanceerd was heb ik de klant ontzorgt door hem te woord te staan als hij vragen had over de website. Daarnaast heb ik de klant ook ondersteund bij het plaatsen van nieuwe content. Ik zorgde ervoor dat de website continue werd bijgewerkt met(beveiligings) updates en handige functionaliteiten voor zowel de klant als de eindgebruiker.Op deze manier was de website altijd up-to-date!",
     imageDesktop: imageReindersDesktop,
   },
   {

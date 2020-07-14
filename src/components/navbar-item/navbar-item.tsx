@@ -9,19 +9,34 @@ export interface INavbarItemProps {
   title: string;
   variant?: ITypeVariant;
   onClick?: () => void;
+  isExternalLink?: boolean;
 }
 
 type ITypeVariant = "primary" | "secondary";
 
 const NavbarItem = (props: INavbarItemProps) => {
   return (
-    <Link
-      className={`${styles.link} ${getMenuItemVariant(props.variant || "primary")}`}
-      to={props.link}
-      onClick={props.onClick}
-    >
-      {props.title}
-    </Link>
+    <>
+      {props.isExternalLink ? (
+        <a
+          className={`${styles.link} ${getMenuItemVariant(props.variant || "primary")}`}
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={props.onClick}
+        >
+          {props.title}
+        </a>
+      ) : (
+        <Link
+          className={`${styles.link} ${getMenuItemVariant(props.variant || "primary")}`}
+          to={props.link}
+          onClick={props.onClick}
+        >
+          {props.title}
+        </Link>
+      )}
+    </>
   );
 };
 

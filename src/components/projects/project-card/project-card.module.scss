@@ -3,6 +3,7 @@
 .macbook {
   position: relative;
   margin-top: 1px;
+  margin-bottom: 30px;
 
   .mask {
     position: relative;
@@ -92,6 +93,53 @@
     @media (min-width: $container-small-max-width) {
       width: 100%;
       margin-left: 0%;
+    }
+  }
+}
+
+.iphone {
+  position: relative;
+  .mask {
+    position: relative;
+    top: 8px;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+    margin-bottom: 3.125rem;
+    width: 64.6%;
+    margin-left: 18%;
+    border-radius: 25px 26px 26px 24px;
+    height: 463px;
+    overflow: scroll;
+    overflow-x: hidden;
+    @media (max-width: $container-small-max-width) {
+      -webkit-overflow-scrolling: touch;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      z-index: 0;
+    }
+  }
+
+  .imageTopbar {
+    svg {
+      position: absolute;
+      width: 33%;
+      height: auto;
+      margin-left: 33%;
+      top: 6px;
+      z-index: 3;
+    }
+  }
+  .imageIphone {
+    svg {
+      position: absolute;
+      width: 70%;
+      height: auto;
+      margin-left: 15%;
+      top: 0;
+      z-index: 1;
     }
   }
 }

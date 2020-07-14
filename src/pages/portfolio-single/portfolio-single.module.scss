@@ -1,1 +1,18 @@
 @import "../../app.module.scss";
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolioImages {
+  display: flex;
+  justify-content: space-around;
+
+  .macbook {
+    .mask {
+      height: 434px !important;
+    }
+  }
+}

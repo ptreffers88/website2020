@@ -17,7 +17,7 @@ const Section = (props: ISectionProps) => {
   return (
     <div className={`${styles.section} ${styles.gutterStandard} ${getStyleBackground(props.background)}`}>
       <div className={getSizeContainer(props.size || "medium")}>
-        <h2>{props.title}</h2>
+        {props.title && <h2>{props.title}</h2>}
         {props.children}
       </div>
     </div>
