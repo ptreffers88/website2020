@@ -28,28 +28,23 @@ const NavbarMenu = (props: INavbarMenuProps) => {
           </div>
         </div>
         <div className={styles.menuItems}>
-          <NavbarItem title="Projecten" link="/projects/" onClick={props.showMenu} />
+          <NavbarItem title="Mijn werk" link="/projects/" onClick={props.showMenu} />
+          <NavbarItem title="Webbio" link="/projects/webbio" onClick={props.showMenu} variant="secondary" />
           <NavbarItem
-            title="Kentaa"
+            title="Kentaa online fundrasing"
+            link="/projects/kentaa"
+            onClick={props.showMenu}
+            variant="secondary"
+          />
+          <NavbarItem
+            title="Helder Private Lease"
             link="/projects/helder-private-lease"
             onClick={props.showMenu}
             variant="secondary"
           />
           <NavbarItem
             title="Autobedrijf Scholten"
-            link="/projects/helder-private-lease"
-            onClick={props.showMenu}
-            variant="secondary"
-          />
-          <NavbarItem
-            title="Reinders Rekreatie"
-            link="/projects/helder-private-lease"
-            onClick={props.showMenu}
-            variant="secondary"
-          />
-          <NavbarItem
-            title="Helder"
-            link="/projects/helder-private-lease"
+            link="/projects/autobedrijf-scholten"
             onClick={props.showMenu}
             variant="secondary"
           />

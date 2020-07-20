@@ -4,15 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: $container-medium-max-width) {
+    flex-wrap: wrap;
+  }
 }
 
-.portfolioImages {
+.projectImages {
   display: flex;
   justify-content: space-around;
-
-  .macbook {
-    .mask {
-      height: 434px !important;
-    }
-  }
+  margin-top: 40px;
 }

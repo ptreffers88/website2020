@@ -1,9 +1,10 @@
 import React from "react";
 
-import { portfolioItems } from "../../data/portfolio";
+import { projectItems } from "../../data/projects";
 import { Projectcard } from "./project-card/project-card";
 
 import styles from "./projects.module.scss";
+import { Link } from "react-router-dom";
 
 const Projects = (): JSX.Element => {
   return (
@@ -11,11 +12,13 @@ const Projects = (): JSX.Element => {
       <div className={styles.container}>
         <h2>Werk waar ik trots op ben</h2>
         <div className={styles.projectCards}>
-          {portfolioItems && portfolioItems.length > 0 && (
+          {projectItems && projectItems.length > 0 && (
             <>
-              {portfolioItems.map((project, index) => (
+              {projectItems.map((project, index) => (
                 <div className={styles.projectCardContainer} key={index}>
-                  <Projectcard image={project.imageDesktop} name={project.name} />
+                  <Link to={`/projects/${project.name.toLocaleLowerCase().replace(/ /g, "-")}`}>
+                    <Projectcard image={project.imageDesktop} name={project.name} />
+                  </Link>
                 </div>
               ))}
             </>

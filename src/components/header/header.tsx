@@ -22,7 +22,6 @@ const Header = (): JSX.Element => {
 
   const handleCloseMenu = (): void => {
     setShowMenu(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

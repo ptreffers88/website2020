@@ -15,7 +15,6 @@ export interface IProjectcardProps {
 }
 
 const Projectcard = (props: IProjectcardProps) => {
-  // const projectNameUrl = props.name.toLocaleLowerCase().replace(/ /g, "-");
   return (
     <>
       {props.variant === "iphone" ? (
