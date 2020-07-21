@@ -1,18 +1,9 @@
 @import "../../../app.module.scss";
 
-.skills {
-  background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  .container {
-    max-width: $container-medium-max-width;
-  }
-
-  .skillWrapper {
-    @media (min-width: $container-medium-max-width) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+.skillWrapper {
+  @media (min-width: $container-small-max-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

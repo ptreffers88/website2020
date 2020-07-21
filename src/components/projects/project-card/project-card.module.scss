@@ -64,7 +64,7 @@
     /* Ipad portrait */
     @media screen and (min-width: 768px) and (orientation: portrait) {
       width: 85.5%;
-      height: 194px;
+      height: 184px;
     }
 
     /* Ipad landscape */
@@ -99,6 +99,7 @@
 
 .iphone {
   position: relative;
+  max-width: 334px;
   .mask {
     position: relative;
     top: 8px;

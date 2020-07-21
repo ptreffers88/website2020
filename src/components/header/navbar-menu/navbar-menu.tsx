@@ -14,7 +14,10 @@ const NavbarMenu = (props: INavbarMenuProps) => {
     if (props.showMenu) {
       props.showMenu();
     }
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    const timeOut = setTimeout(() => {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    }, 500);
+    return () => clearTimeout(timeOut);
   };
 
   return (
@@ -48,7 +51,7 @@ const NavbarMenu = (props: INavbarMenuProps) => {
             onClick={props.showMenu}
             variant="secondary"
           />
-          <NavbarItem title="Contact" link="" onClick={handleContactClick} />
+          <NavbarItem title="Contact" link="/" onClick={handleContactClick} />
           <NavbarItem
             title="Github"
             link="https://github.com/ptreffers88"

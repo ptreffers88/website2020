@@ -10,6 +10,7 @@ import styles from "./project-single.module.scss";
 const ProjectSingle = (): JSX.Element => {
   const { name } = useParams();
   const project = projectItems.find((item) => item.name.toLocaleLowerCase().replace(/ /g, "-") === name);
+  const screensizeSmall = window.innerWidth <= 768;
 
   return (
     <>
@@ -17,39 +18,70 @@ const ProjectSingle = (): JSX.Element => {
         <>
           {project.imageDesktop && (
             <Section background="darker" size="fullWidth">
-              <div className={styles.intro}>
-                <div>
-                  <Projectcard name={project.name} image={project.imageDesktop} size="578px" />
+              {!screensizeSmall ? (
+                <div className={styles.columns2}>
+                  <div>
+                    <Projectcard name={project.name} image={project.imageDesktop} />
+                  </div>
+                  <div>
+                    <h1>{project.name}</h1>
+                    {project.textArea1.map((text) => (
+                      <p>{text.paragraph}</p>
+                    ))}
+                  </div>
                 </div>
+              ) : (
                 <div>
                   <h1>{project.name}</h1>
-                  <p>{project.introText}</p>
+                  <div className={styles.bla}>
+                    <Projectcard name={project.name} image={project.imageDesktop} height="288px" />
+                  </div>
+                  {project.textArea1.map((text) => (
+                    <p>{text.paragraph}</p>
+                  ))}
                 </div>
+              )}
+            </Section>
+          )}
+          {project.textArea2 && (
+            <Section background="light" size="fullWidth">
+              <div className={styles.containerMedium}>
+                {project.textArea2.map((text) => (
+                  <>
+                    <h2>{text.title}</h2>
+                    <p>{text.paragraph}</p>
+                    {text.notice && <span className={styles.notice}>{text.notice}</span>}
+                  </>
+                ))}
               </div>
             </Section>
           )}
-          {project.purposeText && (
-            <Section title={project.purposeTitle} background="light">
-              <p>{project.purposeText}</p>
-            </Section>
-          )}
-          {project.roleTitle && (
+          {project.textArea3 && (
             <Section background="darker" size="fullWidth">
               <div className={styles.containerMedium}>
-                <h2>{project.roleTitle}</h2>
-                <p>{project.roleText}</p>
+                {project.textArea3.map((text) => (
+                  <>
+                    <h2>{text.title}</h2>
+                    <p>{text.paragraph}</p>
+                  </>
+                ))}
               </div>
-              <div className={styles.projectImages}>
-                <Projectcard name={project.name} image={project.imageDesktop} size="578px" />
+              <div className={`${styles.projectImages} ${styles.columns2}`}>
+                <Projectcard name={project.name} image={project.imageDesktop} />
                 {project.imageMobile && (
-                  <Projectcard name={project.name} image={project.imageMobile} size="334px" variant="iphone" />
+                  <Projectcard name={project.name} image={project.imageMobile} variant="iphone" />
                 )}
               </div>
             </Section>
           )}
-          {project.uptodateTitle && (
-            <Section title={project.uptodateTitle} background="light">
-              <p>{project.uptodateText}</p>
+          {project.textArea4 && (
+            <Section background="light">
+              {project.textArea4.map((text) => (
+                <>
+                  <h2>{text.title}</h2>
+                  <p>{text.paragraph}</p>
+                </>
+              ))}
             </Section>
           )}
         </>

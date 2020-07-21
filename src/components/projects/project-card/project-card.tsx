@@ -11,23 +11,23 @@ export interface IProjectcardProps {
   image: string;
   name: string;
   variant?: "macbook" | "iphone";
-  size?: string;
+  height?: string;
 }
 
 const Projectcard = (props: IProjectcardProps) => {
   return (
     <>
       {props.variant === "iphone" ? (
-        <article className={styles.iphone} style={{ width: props.size }}>
+        <article className={styles.iphone}>
           <ReactSVG className={styles.imageTopbar} src={imageIphoneTopbar} />
-          <div className={styles.mask}>
+          <div className={styles.mask} style={{ height: props.height }}>
             <img src={props.image} alt={props.name} />
           </div>
           <ReactSVG className={styles.imageIphone} src={imageIphone} />
         </article>
       ) : (
-        <article className={styles.macbook} style={{ width: props.size }}>
-          <div className={styles.mask}>
+        <article className={styles.macbook}>
+          <div className={styles.mask} style={{ height: props.height }}>
             <img src={props.image} alt={props.name} />
           </div>
           <ReactSVG src={imageMacbook} />

@@ -36,6 +36,20 @@ body {
   }
 }
 
+.columns {
+  &2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    > * {
+      width: 48%;
+    }
+    @media (max-width: $container-medium-max-width) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -59,10 +73,16 @@ h3 {
   margin-bottom: 5px;
 }
 
+.notice,
 p {
   margin-bottom: 16px;
   font-size: $font-size-small;
   line-height: 1.6;
+}
+
+.notice {
+  font-style: italic;
+  font-size: $font-size-smaller;
 }
 
 a {

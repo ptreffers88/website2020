@@ -2,7 +2,7 @@
 
 .skill {
   margin-bottom: 40px;
-  @media (min-width: $container-medium-max-width) {
+  @media (min-width: $container-small-max-width) {
     width: 45%;
   }
 }

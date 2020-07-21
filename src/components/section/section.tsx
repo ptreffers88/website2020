@@ -15,12 +15,12 @@ type ISectionBackground = "light" | "darker" | "darkest";
 
 const Section = (props: ISectionProps) => {
   return (
-    <div className={`${styles.section} ${styles.gutterStandard} ${getStyleBackground(props.background)}`}>
+    <section className={`${styles.section} ${styles.gutterStandard} ${getStyleBackground(props.background)}`}>
       <div className={getSizeContainer(props.size || "medium")}>
         {props.title && <h2>{props.title}</h2>}
         {props.children}
       </div>
-    </div>
+    </section>
   );
 };
 
