@@ -41,11 +41,14 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media (max-width: $container-small-max-width) {
+      flex-wrap: wrap;
+    }
     > * {
       width: 48%;
-    }
-    @media (max-width: $container-medium-max-width) {
-      flex-wrap: wrap;
+      @media (max-width: $container-small-max-width) {
+        width: 100%;
+      }
     }
   }
 }
@@ -64,6 +67,9 @@ h3 {
   margin-bottom: 30px;
   @media (max-width: $container-medium-max-width) {
     font-size: $font-size-large;
+  }
+  @media (max-width: $container-small-max-width) {
+    font-size: $font-size-medium;
   }
 }
 

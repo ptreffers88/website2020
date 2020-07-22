@@ -1,17 +1,22 @@
 @import "../../app.module.scss";
 
-.bla {
+.macbookContainer {
   @media (max-width: $container-medium-max-width) {
     width: 75%;
-    margin: 0 auto 40px;
+    margin: 0 auto 70px;
   }
-  .maskbla {
-    @media (max-width: $container-medium-max-width) {
-      height: 288px !important;
-    }
+  @media (max-width: $container-small-max-width) {
+    width: 100%;
   }
 }
 
 .projectImages {
   margin-top: 40px;
+  > * {
+    &:first-child {
+      @media (max-width: $container-small-max-width) {
+        margin-bottom: 60px;
+      }
+    }
+  }
 }

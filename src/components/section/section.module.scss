@@ -3,7 +3,7 @@
 .section {
   padding-left: 20px;
   padding-right: 20px;
-  @media (max-width: $container-medium-max-width) {
+  @media (min-width: $container-small-max-width) and (max-width: $container-medium-max-width) {
     padding-left: 40px;
     padding-right: 40px;
   }

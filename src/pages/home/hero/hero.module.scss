@@ -8,11 +8,11 @@
     display: flex;
     justify-content: center;
     padding: 50px 0;
-    @media (max-width: $container-medium-max-width) {
+    @media (max-width: $container-small-max-width) {
       padding: 0;
     }
     .image {
-      @media (min-width: $container-medium-max-width) {
+      @media (min-width: $container-small-max-width) {
         max-width: 400px;
         max-height: 400px;
         border-radius: 50%;
@@ -20,7 +20,7 @@
       }
       img {
         width: 100%;
-        @media (min-width: $container-medium-max-width) {
+        @media (min-width: $container-small-max-width) {
           transform: scale(1.1);
           margin-left: 20px;
           margin-top: 20px;
@@ -32,7 +32,7 @@
     width: 100%;
     background-color: rgba($medium-gray, 0.6);
     padding: 16px 10px;
-    @media (max-width: $container-medium-max-width) {
+    @media (max-width: $container-small-max-width) {
       position: absolute;
       bottom: 0;
     }

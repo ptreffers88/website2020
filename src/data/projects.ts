@@ -10,6 +10,7 @@ export const projectItems = [
     id: 1,
     name: "Webbio",
     textArea1: [
+      { id: 1 },
       {
         paragraph:
           "Het team van Webbio bestaat uit software-ontwikkelaars en UX-designers. Door bestaande software slim te combineren met maatwerk op basis van open-source, lossen zij systeemfrustratie op voor jouw klanten en medewerkers.",
@@ -19,6 +20,7 @@ export const projectItems = [
       },
     ],
     textArea2: [
+      { id: 1 },
       {
         title: "Mijn rol bij Webbio",
       },
@@ -45,12 +47,14 @@ export const projectItems = [
     id: 2,
     name: "Kentaa",
     textArea1: [
+      { id: 1 },
       {
         paragraph:
           "Het team van Kentaa werkt dagelijks aan een gezamenlijke passie: wij willen dat zoveel mogelijk mensen met plezier geld ophalen. Met als doel, iedereen kansen te geven op een goed leven en samen de wereld beter maken.",
       },
     ],
     textArea2: [
+      { id: 1 },
       { title: "Mijn rol bij Kentaa" },
       {
         paragraph:
@@ -70,12 +74,14 @@ export const projectItems = [
     id: 3,
     name: "Helder Private Lease",
     textArea1: [
+      { id: 1 },
       {
         paragraph:
           "Bij Helder kunnen consumenten voor een korte looptijd een auto leasen tegen hele mooie voorwaarden. Helder is een private lease bedrijf dat heel transparant is naar de klant over de kosten en looptijd van het contract.",
       },
     ],
     textArea2: [
+      { id: 1 },
       { title: "Een website die perfect aansluit bij de eindgebruiker" },
       {
         paragraph:
@@ -86,6 +92,7 @@ export const projectItems = [
       },
     ],
     textArea3: [
+      { id: 1 },
       {
         title: "Mijn rol bij Helder",
       },
@@ -95,6 +102,7 @@ export const projectItems = [
       },
     ],
     textArea4: [
+      { id: 1 },
       {
         title: "Altijd up-to-date",
       },
@@ -111,6 +119,7 @@ export const projectItems = [
     id: 4,
     name: "Autobedrijf Scholten",
     textArea1: [
+      { id: 1 },
       {
         paragraph: "Autobedrijf Scholten is een autobedrijf dat zich profileert als full-service.",
       },
@@ -120,6 +129,7 @@ export const projectItems = [
       },
     ],
     textArea2: [
+      { id: 1 },
       {
         title: "Een website die zowel past bij de eindgebruikers als de klant",
       },
@@ -140,6 +150,7 @@ export const projectItems = [
       },
     ],
     textArea3: [
+      { id: 1 },
       {
         title: "Mijn rol bij Bovemij Connect",
       },
@@ -153,6 +164,7 @@ export const projectItems = [
       },
     ],
     textArea4: [
+      { id: 1 },
       {
         title: "Altijd up-to-date",
       },

@@ -8,7 +8,7 @@
   padding: 5px 20px;
   background-color: white;
   border-bottom: 2px solid $light-gray;
-  @media (max-width: $container-medium-max-width) {
+  @media (min-width: $container-small-max-width) and (max-width: $container-medium-max-width) {
     padding-left: 40px;
     padding-right: 40px;
   }

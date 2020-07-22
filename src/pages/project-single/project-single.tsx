@@ -33,7 +33,7 @@ const ProjectSingle = (): JSX.Element => {
               ) : (
                 <div>
                   <h1>{project.name}</h1>
-                  <div className={styles.bla}>
+                  <div className={styles.macbookContainer}>
                     <Projectcard name={project.name} image={project.imageDesktop} height="288px" />
                   </div>
                   {project.textArea1.map((text) => (
