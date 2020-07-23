@@ -3,6 +3,7 @@ import React from "react";
 import { NavbarItem } from "../../navbar-item/navbar-item";
 import styles from "./navbar-menu.module.scss";
 import { Logo } from "../../logo/logo";
+import { ScrollTo } from "../../../utils/scrollTo";
 
 export interface INavbarMenuProps {
   isOpen: boolean;
@@ -14,10 +15,7 @@ const NavbarMenu = (props: INavbarMenuProps) => {
     if (props.showMenu) {
       props.showMenu();
     }
-    const timeOut = setTimeout(() => {
-      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-    }, 500);
-    return () => clearTimeout(timeOut);
+    ScrollTo("bottom");
   };
 
   return (
@@ -51,7 +49,7 @@ const NavbarMenu = (props: INavbarMenuProps) => {
             onClick={props.showMenu}
             variant="secondary"
           />
-          <NavbarItem title="Contact" link="/" onClick={handleContactClick} />
+          <NavbarItem title="Contact" link="/" onClick={handleContactClick} scrollToAnchorLink />
           <NavbarItem
             title="Github"
             link="https://github.com/ptreffers88"

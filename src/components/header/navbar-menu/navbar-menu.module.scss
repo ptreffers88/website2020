@@ -54,6 +54,7 @@
       background-color: $medium-gray;
       @media (max-width: $container-small-max-width) {
         right: -10px;
+        top: 0;
       }
       &:first-child {
         transform: rotate(-45deg);

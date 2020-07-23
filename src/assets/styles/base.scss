@@ -70,6 +70,7 @@ h3 {
   }
   @media (max-width: $container-small-max-width) {
     font-size: $font-size-medium;
+    margin-bottom: 24px;
   }
 }
 
@@ -84,6 +85,9 @@ p {
   margin-bottom: 16px;
   font-size: $font-size-small;
   line-height: 1.6;
+  @media (max-width: $container-small-max-width) {
+    font-size: $font-size-global;
+  }
 }
 
 .notice {

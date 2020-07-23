@@ -7,6 +7,7 @@
   font-weight: 400;
   font-size: $font-size-global;
   display: block;
+  cursor: pointer;
   .active,
   &:hover {
     color: $brand-primary;

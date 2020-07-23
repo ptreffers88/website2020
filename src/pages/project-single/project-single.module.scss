@@ -3,10 +3,18 @@
 .macbookContainer {
   @media (max-width: $container-medium-max-width) {
     width: 75%;
-    margin: 0 auto 70px;
+    margin: 0 auto 30px;
   }
   @media (max-width: $container-small-max-width) {
     width: 100%;
+  }
+  article {
+    @media (max-width: $container-medium-max-width) {
+      height: 300px;
+    }
+    @media (max-width: $container-small-max-width) {
+      height: 192px;
+    }
   }
 }
 
@@ -15,7 +23,7 @@
   > * {
     &:first-child {
       @media (max-width: $container-small-max-width) {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
       }
     }
   }

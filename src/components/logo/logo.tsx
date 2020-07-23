@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 import LOGO from "../../assets/img/logo.svg";
 import styles from "./logo.module.scss";
+import { ScrollTo } from "../../utils/scrollTo";
 
 export interface ILogoProps {
   onClick?: () => void;
@@ -10,7 +11,7 @@ export interface ILogoProps {
 
 const Logo = (props: ILogoProps): JSX.Element => {
   const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    ScrollTo("top");
     if (props.onClick) {
       props.onClick();
     }

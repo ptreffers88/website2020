@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./navbar-item.module.scss";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
+import { ScrollTo } from "../../utils/scrollTo";
 
 export interface INavbarItemProps {
   link: string;
@@ -10,20 +11,32 @@ export interface INavbarItemProps {
   variant?: ITypeVariant;
   onClick?: () => void;
   isExternalLink?: boolean;
+  scrollToAnchorLink?: boolean;
 }
 
 type ITypeVariant = "primary" | "secondary";
 
 const NavbarItem = (props: INavbarItemProps) => {
+  const handleClick = (): void => {
+    ScrollTo("top");
+    if (props.onClick) {
+      props.onClick();
+    }
+  };
+
   return (
     <>
-      {props.isExternalLink ? (
+      {props.scrollToAnchorLink ? (
+        <span className={`${styles.link} ${getMenuItemVariant(props.variant || "primary")}`} onClick={handleClick}>
+          {props.title}
+        </span>
+      ) : props.isExternalLink ? (
         <a
           className={`${styles.link} ${getMenuItemVariant(props.variant || "primary")}`}
           href={props.link}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={props.onClick}
+          onClick={handleClick}
         >
           {props.title}
         </a>
@@ -31,7 +44,7 @@ const NavbarItem = (props: INavbarItemProps) => {
         <Link
           className={`${styles.link} ${getMenuItemVariant(props.variant || "primary")}`}
           to={props.link}
-          onClick={props.onClick}
+          onClick={handleClick}
         >
           {props.title}
         </Link>
