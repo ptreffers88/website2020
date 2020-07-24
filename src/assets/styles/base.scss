@@ -38,16 +38,39 @@ body {
 
 .columns {
   &2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    @media (max-width: $container-small-max-width) {
-      flex-wrap: wrap;
-    }
-    > * {
-      width: 48%;
+    &Even {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
       @media (max-width: $container-small-max-width) {
-        width: 100%;
+        flex-wrap: wrap;
+      }
+      > * {
+        width: 48%;
+        @media (max-width: $container-small-max-width) {
+          width: 100%;
+        }
+      }
+    }
+    &ThirdLeft {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      @media (max-width: $container-small-max-width) {
+        flex-wrap: wrap;
+      }
+      > * {
+        @media (min-width: $container-small-max-width) {
+          &:first-child {
+            width: 67.5%;
+          }
+          &:last-child {
+            width: 30%;
+          }
+        }
+        @media (max-width: $container-small-max-width) {
+          width: 100%;
+        }
       }
     }
   }
@@ -70,7 +93,7 @@ h3 {
   }
   @media (max-width: $container-small-max-width) {
     font-size: $font-size-medium;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 }
 
@@ -78,6 +101,9 @@ h3 {
   font-size: $font-size-small;
   font-weight: 400;
   margin-bottom: 5px;
+  @media (max-width: $container-small-max-width) {
+    font-size: $font-size-global;
+  }
 }
 
 .notice,

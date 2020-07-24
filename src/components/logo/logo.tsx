@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ReactSVG } from "react-svg";
+import { Link } from "react-router-dom";
+
 import LOGO from "../../assets/img/logo.svg";
-import styles from "./logo.module.scss";
 import { ScrollTo } from "../../utils/scrollTo";
+
+import styles from "./logo.module.scss";
 
 export interface ILogoProps {
   onClick?: () => void;

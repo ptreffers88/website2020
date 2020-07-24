@@ -1,12 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { projectItems } from "../../data/projects";
 import { Projectcard } from "./project-card/project-card";
-
-import styles from "./projects.module.scss";
-import { Link } from "react-router-dom";
 import { Section } from "../section/section";
 import { ScrollTo } from "../../utils/scrollTo";
+
+import styles from "./projects.module.scss";
 
 const Projects = (): JSX.Element => {
   const handleClick = (): void => {

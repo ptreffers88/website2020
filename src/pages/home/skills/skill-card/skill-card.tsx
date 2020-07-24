@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { isInViewport } from "../../../../utils/isInViewport";
 
@@ -12,12 +12,20 @@ export interface ISkillCardProps {
 const SkillCard = (props: ISkillCardProps): JSX.Element => {
   const [finalpercentage, setFinalpercentage] = useState<number>(0);
 
-  window.addEventListener("scroll", function () {
-    let elem = document.querySelector("#progress");
-    if (elem && isInViewport(elem)) {
-      setFinalpercentage(props.percentage);
-    }
-  });
+  useEffect(() => {
+    const setProgress = (): void => {
+      let elem = document.querySelector("#progress");
+      if (elem && isInViewport(elem)) {
+        setFinalpercentage(props.percentage);
+      }
+    };
+
+    window.addEventListener("scroll", setProgress);
+
+    return (): void => {
+      window.removeEventListener("resize", setProgress);
+    };
+  }, [props.percentage]);
 
   return (
     <div className={styles.skill}>

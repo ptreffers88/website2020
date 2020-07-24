@@ -1,9 +1,10 @@
 import React from "react";
+import clsx from "clsx";
+import { Link } from "react-router-dom";
+
+import { ScrollTo } from "../../utils/scrollTo";
 
 import styles from "./navbar-item.module.scss";
-import { Link } from "react-router-dom";
-import clsx from "clsx";
-import { ScrollTo } from "../../utils/scrollTo";
 
 export interface INavbarItemProps {
   link: string;

@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import { projectItems } from "../../data/projects";
 import { Section } from "../../components/section/section";
 import { Projectcard } from "../../components/projects/project-card/project-card";
-import { projectItems } from "../../data/projects";
 
 import styles from "./project-single.module.scss";
 
 const ProjectSingle = (): JSX.Element => {
   const { name } = useParams();
   const project = projectItems.find((item) => item.name.toLocaleLowerCase().replace(/ /g, "-") === name);
-  const screensizeSmall = window.innerWidth <= 768;
+
+  const [screenSize, setScreenSize] = useState({ height: window.innerHeight, width: window.innerWidth });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    window.removeEventListener("orientationchange", handleResize);
+
+    return (): void => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("orientationchange", handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -18,8 +36,8 @@ const ProjectSingle = (): JSX.Element => {
         <>
           {project.imageDesktop && (
             <Section background="darker" size="fullWidth">
-              {!screensizeSmall ? (
-                <div className={styles.columns2}>
+              {screenSize.width > 768 ? (
+                <div className={styles.columns2Even}>
                   <div>
                     <Projectcard name={project.name} image={project.imageDesktop} />
                   </div>
@@ -57,16 +75,14 @@ const ProjectSingle = (): JSX.Element => {
             </Section>
           )}
           {project.textArea3 && (
-            <Section background="darker" size="fullWidth">
-              <div className={styles.containerMedium}>
-                {project.textArea3.map((text) => (
-                  <>
-                    <h2>{text.title}</h2>
-                    <p>{text.paragraph}</p>
-                  </>
-                ))}
-              </div>
-              <div className={`${styles.projectImages} ${styles.columns2}`}>
+            <Section background="darker" size="medium">
+              {project.textArea3.map((text) => (
+                <>
+                  <h2>{text.title}</h2>
+                  <p>{text.paragraph}</p>
+                </>
+              ))}
+              <div className={`${styles.projectImages} ${styles.columns2ThirdLeft}`}>
                 <Projectcard name={project.name} image={project.imageDesktop} />
                 {project.imageMobile && (
                   <Projectcard name={project.name} image={project.imageMobile} variant="iphone" />

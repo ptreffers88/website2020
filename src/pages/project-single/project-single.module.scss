@@ -9,11 +9,9 @@
     width: 100%;
   }
   article {
-    @media (max-width: $container-medium-max-width) {
+    /* Tablet portrait */
+    @media screen and (width: 768px) and (orientation: portrait) {
       height: 300px;
-    }
-    @media (max-width: $container-small-max-width) {
-      height: 192px;
     }
   }
 }
@@ -22,6 +20,21 @@
   margin-top: 40px;
   > * {
     &:first-child {
+      /* Tablet Landscape */
+      @media print, screen and (max-width: 1024px) and (orientation: landscape) {
+        height: 332px;
+      }
+
+      /* Tablet portrait */
+      @media screen and (min-width: 768px) and (orientation: portrait) {
+        height: 268px;
+      }
+
+      /* Tablet large portrait */
+      @media screen and (min-width: 1024px) and (orientation: portrait) {
+        height: 332px;
+      }
+
       @media (max-width: $container-small-max-width) {
         margin-bottom: 40px;
       }

@@ -30,7 +30,7 @@ export const projectItems = [
       },
       {
         paragraph:
-          "Wij hebben een “Mijn Omgeving” ontwikkeld waarmee potentiële kopers van een huis grip krijgen op hun eigen klantreis. Alle zaken van interesse voor een woning tot het aanleveren van de benodigde documentatie voor de notaris kunnen zij hierin zelf regelen.",
+          "Wij hebben (middels React) een “Mijn Omgeving” ontwikkeld waarmee potentiële kopers van een huis grip krijgen op hun eigen klantreis. Alle zaken van interesse voor een woning tot het aanleveren van de benodigde documentatie voor de notaris kunnen zij hierin zelf regelen.",
       },
       {
         paragraph:
@@ -58,7 +58,11 @@ export const projectItems = [
       { title: "Mijn rol bij Kentaa" },
       {
         paragraph:
-          "Bij Kentaa ben ik medeverantwoordelijk geweest voor het doorontwikkelen van het platform. Ook zorg ik ervoor dat klanten de mogelijkheid hebben om uit steeds meer nieuwe uitstralingen van hun website te kiezen.",
+          "Bij Kentaa ben ik medeverantwoordelijk geweest voor het doorontwikkelen van het 'Kentaa platform'. Een platform waarmee klanten (zoals ALS of het Rode Kruis) hun eigen onlne fondsenwerving kunnen opzetten in de vorm van een eigen website.",
+      },
+      {
+        paragraph:
+          "Ook zorgde ik ervoor dat klanten de mogelijkheid hadden om uit steeds meer nieuwe templates te kiezen.",
       },
       {
         paragraph:
@@ -139,7 +143,7 @@ export const projectItems = [
       },
       {
         paragraph:
-          "De eigenaar vondt dat zijn website niet meer paste bij de professionaliteit die hij graag uitstraalt als klanten zijn showroom en garage bezoeken. Ook was hij niet goed vindbaar in Google en wist hij dat hij met de tijd mee moest gaan.Dat hij zijn klanten ook op mobiele apparaten goed moet kunnen bedienen (iets wat zijn vorige website niet kon doen).",
+          "De eigenaar vondt dat zijn website niet meer paste bij de professionaliteit die hij graag uitstraalt als klanten zijn showroom en garage bezoeken. Ook was hij niet goed vindbaar in Google en wist hij dat hij met de tijd mee moest gaan. Dat hij zijn klanten ook op mobiele apparaten goed moet kunnen bedienen (iets wat zijn vorige website niet kon doen).",
       },
       {
         paragraph:
@@ -156,7 +160,7 @@ export const projectItems = [
       },
       {
         paragraph:
-          "Namens Bovemij Connect heb ik voor Autobedrijf Scholten een nieuwe gebruiksvriendelijke website mogen ontwikkelen die beter aansluit bij hun dienstverlening en offline uitstraling.",
+          "Namens Bovemij Connect (Bovemij Verzekeringen) heb ik voor Autobedrijf Scholten een nieuwe gebruiksvriendelijke website mogen ontwikkelen die beter aansluit bij hun dienstverlening en offline uitstraling.",
       },
       {
         paragraph:

@@ -2,9 +2,9 @@ import React from "react";
 
 import { skills } from "../../../data/skills";
 import { SkillCard } from "./skill-card/skill-card";
+import { Section } from "../../../components/section/section";
 
 import styles from "./skills.module.scss";
-import { Section } from "../../../components/section/section";
 
 const Skills = (): JSX.Element => {
   return (

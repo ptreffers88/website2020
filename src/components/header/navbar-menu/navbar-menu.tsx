@@ -1,9 +1,10 @@
 import React from "react";
 
 import { NavbarItem } from "../../navbar-item/navbar-item";
-import styles from "./navbar-menu.module.scss";
 import { Logo } from "../../logo/logo";
 import { ScrollTo } from "../../../utils/scrollTo";
+
+import styles from "./navbar-menu.module.scss";
 
 export interface INavbarMenuProps {
   isOpen: boolean;

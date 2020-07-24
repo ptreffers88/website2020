@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import { Header } from "./components/header/header";
 import { Home } from "./pages/home/home";
-import { Footer } from "./components/footer/footer";
-import { ProjectSingle } from "./pages/project-single/project-single";
 import { Projects } from "./components/projects/projects";
+import { ProjectSingle } from "./pages/project-single/project-single";
+import { Footer } from "./components/footer/footer";
 
 const App = (): JSX.Element => {
   return (
