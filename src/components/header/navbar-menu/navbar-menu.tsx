@@ -33,7 +33,7 @@ const NavbarMenu = (props: INavbarMenuProps) => {
           <NavbarItem title="Mijn werk" link="/projects/" onClick={props.showMenu} />
           <NavbarItem title="Webbio" link="/projects/webbio" onClick={props.showMenu} variant="secondary" />
           <NavbarItem
-            title="Kentaa online fundrasing"
+            title="Kentaa online fundraising"
             link="/projects/kentaa"
             onClick={props.showMenu}
             variant="secondary"

@@ -18,22 +18,26 @@
   @media (min-width: $container-small-max-width) {
     width: 48%;
   }
+
   @media (max-width: $container-medium-max-width) {
     margin-bottom: 50px;
   }
+
   &:first-child {
     /* Ipad landscape */
-    @media print, screen and (min-width: 1024px) {
+    @media (min-width: 1024px) {
       margin-bottom: 70px;
     }
   }
+
   &:nth-of-type(1n + 2) {
-    @media screen and (min-width: 768px) and (orientation: portrait) {
+    @media (min-width: 768px) and (orientation: portrait) {
       margin-bottom: 0;
     }
   }
+
   /* Iphone 5/SE landscape */
-  @media screen and (max-width: 639px) and (orientation: landscape) {
+  @media (max-width: 639px) and (orientation: landscape) {
     margin-bottom: 80px;
   }
 

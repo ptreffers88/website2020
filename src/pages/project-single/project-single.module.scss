@@ -10,8 +10,23 @@
   }
   article {
     /* Tablet portrait */
-    @media screen and (width: 768px) and (orientation: portrait) {
-      height: 300px;
+    @media (width: 768px) and (orientation: portrait) {
+      height: 296px;
+    }
+
+    /* Iphone 6/7/8 Plus landscape */
+    @media (max-width: 736px) and (orientation: landscape) {
+      height: 276px;
+    }
+
+    /* Iphone 6/7/8 landscape */
+    @media (max-width: 667px) and (orientation: landscape) {
+      height: 252px;
+    }
+
+    /* Iphone 5/SE landscape */
+    @media (max-width: 568px) and (orientation: landscape) {
+      height: 302px;
     }
   }
 }
@@ -21,18 +36,38 @@
   > * {
     &:first-child {
       /* Tablet Landscape */
-      @media print, screen and (max-width: 1024px) and (orientation: landscape) {
+      @media (max-width: 1024px) and (orientation: landscape) {
         height: 332px;
       }
 
       /* Tablet portrait */
-      @media screen and (min-width: 768px) and (orientation: portrait) {
+      @media (min-width: 768px) and (orientation: portrait) {
         height: 268px;
       }
 
       /* Tablet large portrait */
-      @media screen and (min-width: 1024px) and (orientation: portrait) {
+      @media (min-width: 1024px) and (orientation: portrait) {
         height: 332px;
+      }
+
+      /* Iphone x landscape */
+      @media (max-width: 812px) and (orientation: landscape) {
+        height: 284px;
+      }
+
+      /* Iphone 6/7/8 Plus landscape */
+      @media (max-width: 736px) and (orientation: landscape) {
+        height: 250px;
+      }
+
+      /* Iphone 6/7/8 landscape */
+      @media (max-width: 667px) and (orientation: landscape) {
+        height: 226px;
+      }
+
+      /* Iphone 5/SE landscape */
+      @media (max-width: 568px) and (orientation: landscape) {
+        height: 304px;
       }
 
       @media (max-width: $container-small-max-width) {

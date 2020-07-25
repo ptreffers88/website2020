@@ -13,32 +13,52 @@
   }
 
   /* Tablet Landscape */
-  @media print, screen and (max-width: 1024px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     height: 272px;
   }
 
   /* Tablet portrait */
-  @media screen and (min-width: 768px) and (orientation: portrait) {
+  @media (min-width: 768px) and (orientation: portrait) {
     height: 190px;
   }
 
   /* Tablet large portrait */
-  @media screen and (min-width: 1024px) and (orientation: portrait) {
+  @media (min-width: 1024px) and (orientation: portrait) {
     height: 272px;
   }
 
-  /* Iphone 6/7/8 Plus */
-  @media screen and (max-width: $container-small-max-width) {
+  /* Iphone 6/7/8 Plus portrait */
+  @media (max-width: $container-small-max-width) {
     height: 215px;
   }
 
-  /* Iphone 6/7/8/x */
+  /* Iphone x landscape */
+  @media (max-width: 812px) and (orientation: landscape) {
+    height: 202px;
+  }
+
+  /* Iphone 6/7/8 Plus landscape */
+  @media (max-width: 736px) and (orientation: landscape) {
+    height: 178px;
+  }
+
+  /* Iphone 6/7/8 landscape */
+  @media (max-width: 667px) and (orientation: landscape) {
+    height: 162px;
+  }
+
+  /* Iphone 6/7/8/x portrait */
   @media (max-width: 413px) {
     height: 193px;
   }
 
-  /* Iphone 5/SE */
-  @media screen and (max-width: $container-xsmall-max-width) {
+  /* Iphone 5/SE landscape */
+  @media (max-width: 568px) and (orientation: landscape) {
+    height: 304px;
+  }
+
+  /* Iphone 5/SE portrait */
+  @media (max-width: $container-xsmall-max-width) {
     height: 161px;
   }
 
@@ -53,7 +73,7 @@
     -webkit-overflow-scrolling: touch;
 
     /* Tablet Landscape */
-    @media print, screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
       height: 94.5%;
     }
 
@@ -75,32 +95,52 @@
   }
 
   /* Tablet Landscape */
-  @media print, screen and (max-width: 1024px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     height: 377px;
   }
 
   /* Tablet portrait */
-  @media screen and (min-width: 768px) and (orientation: portrait) {
+  @media (min-width: 768px) and (orientation: portrait) {
     height: 310px;
   }
 
   /* Tablet large portrait */
-  @media screen and (min-width: 1024px) and (orientation: portrait) {
+  @media (min-width: 1024px) and (orientation: portrait) {
     height: 390px;
   }
 
-  /* Iphone 6/7/8 Plus */
-  @media screen and (max-width: $container-small-max-width) {
+  /* Iphone 6/7/8 Plus portrait */
+  @media (max-width: $container-small-max-width) {
     height: 490px;
   }
 
-  /* Iphone 6/7/8/x */
+  /* Iphone x landscape */
+  @media (max-width: 812px) and (orientation: landscape) {
+    height: 330px;
+  }
+
+  /* Iphone 6/7/8 Plus landscape */
+  @media (max-width: 736px) and (orientation: landscape) {
+    height: 288px;
+  }
+
+  /* Iphone 6/7/8 landscape */
+  @media (max-width: 667px) and (orientation: landscape) {
+    height: 262px;
+  }
+
+  /* Iphone 6/7/8/x portrait */
   @media (max-width: 413px) {
     height: 450px;
   }
 
-  /* Iphone 5/SE */
-  @media screen and (max-width: $container-xsmall-max-width) {
+  /* Iphone 5/SE landscape */
+  @media (max-width: 568px) and (orientation: landscape) {
+    height: 588px;
+  }
+
+  /* Iphone 5/SE portrait */
+  @media (max-width: $container-xsmall-max-width) {
     height: 376px;
   }
 
@@ -117,12 +157,12 @@
     }
 
     /* Tablet portrait */
-    @media screen and (min-width: 768px) and (orientation: portrait) {
+    @media (min-width: 768px) and (orientation: portrait) {
       border-radius: 14px;
     }
 
     /* Tablet large portrait */
-    @media screen and (min-width: 1024px) and (orientation: portrait) {
+    @media (min-width: 1024px) and (orientation: portrait) {
       border-radius: 22px;
     }
 
@@ -131,8 +171,13 @@
       border-radius: 30px;
     }
 
+    /* Iphone 5/SE landscape */
+    @media (max-width: 568px) and (orientation: landscape) {
+      width: 50%;
+    }
+
     /* Iphone 5/SE */
-    @media screen and (max-width: $container-xsmall-max-width) {
+    @media (max-width: $container-xsmall-max-width) {
       border-radius: 26px;
     }
   }
