@@ -5,7 +5,7 @@ import { projectItems } from "../../data/projects";
 import { Section } from "../../components/section/section";
 import { Projectcard } from "../../components/projects/project-card/project-card";
 
-import styles from "./project-single.module.scss";
+import styles from "../../app.module.scss";
 
 const ProjectSingle = (): JSX.Element => {
   const { name } = useParams();
@@ -83,9 +83,13 @@ const ProjectSingle = (): JSX.Element => {
                 </>
               ))}
               <div className={`${styles.projectImages} ${styles.columns2ThirdLeft}`}>
+                <div>
                 <Projectcard name={project.name} image={project.imageDesktop} />
+                </div>
                 {project.imageMobile && (
+                  <div>
                   <Projectcard name={project.name} image={project.imageMobile} variant="iphone" />
+                  </div>
                 )}
               </div>
             </Section>
