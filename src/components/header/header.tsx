@@ -27,10 +27,10 @@ const Header = (): JSX.Element => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.logo}>
+        <div className={styles.logo} data-sal="slide-down" data-sal-duration="750" data-sal-delay="700">
           <Logo />
         </div>
-        <div className={styles.hamburger} onClick={handleShowMenu}>
+        <div className={styles.hamburger} onClick={handleShowMenu} data-sal="slide-down" data-sal-duration="750" data-sal-delay="700">
           <span className={styles.bar} />
           <span className={styles.bar} />
           <span className={styles.bar} />

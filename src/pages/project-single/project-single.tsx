@@ -37,7 +37,7 @@ const ProjectSingle = (): JSX.Element => {
           {project.imageDesktop && (
             <Section background="darker" size="fullWidth">
               {screenSize.width > 768 ? (
-                <div className={styles.columns2Even}>
+                <div className={styles.columns2Even} data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">
                   <div>
                     <Projectcard name={project.name} image={project.imageDesktop} />
                   </div>
@@ -49,7 +49,7 @@ const ProjectSingle = (): JSX.Element => {
                   </div>
                 </div>
               ) : (
-                <div>
+                <div data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">
                   <h1>{project.name}</h1>
                   <div className={styles.macbookContainer}>
                     <Projectcard name={project.name} image={project.imageDesktop} />
@@ -66,8 +66,8 @@ const ProjectSingle = (): JSX.Element => {
               <div className={styles.containerMedium}>
                 {project.textArea2.map((text) => (
                   <>
-                    <h2>{text.title}</h2>
-                    <p>{text.paragraph}</p>
+                    <h2 data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">{text.title}</h2>
+                    <p data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">{text.paragraph}</p>
                     {text.notice && <span className={styles.notice}>{text.notice}</span>}
                   </>
                 ))}
@@ -78,16 +78,16 @@ const ProjectSingle = (): JSX.Element => {
             <Section background="darker" size="medium">
               {project.textArea3.map((text) => (
                 <>
-                  <h2>{text.title}</h2>
-                  <p>{text.paragraph}</p>
+                  <h2 data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">{text.title}</h2>
+                  <p data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">{text.paragraph}</p>
                 </>
               ))}
               <div className={`${styles.projectImages} ${styles.columns2ThirdLeft}`}>
-                <div>
+                <div data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">
                 <Projectcard name={project.name} image={project.imageDesktop} />
                 </div>
                 {project.imageMobile && (
-                  <div>
+                  <div data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">
                   <Projectcard name={project.name} image={project.imageMobile} variant="iphone" />
                   </div>
                 )}
@@ -98,8 +98,8 @@ const ProjectSingle = (): JSX.Element => {
             <Section background="light">
               {project.textArea4.map((text) => (
                 <>
-                  <h2>{text.title}</h2>
-                  <p>{text.paragraph}</p>
+                  <h2 data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">{text.title}</h2>
+                  <p data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">{text.paragraph}</p>
                 </>
               ))}
             </Section>

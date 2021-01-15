@@ -15,12 +15,12 @@ const Projects = (): JSX.Element => {
 
   return (
     <Section background="darker" size="fullWidth">
-      <h2>Werk waar ik trots op ben</h2>
+      <h2 data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">Werk waar ik trots op ben</h2>
       <div className={styles.projectCards}>
         {projectItems && projectItems.length > 0 && (
           <>
             {projectItems.map((project, index) => (
-              <div className={styles.projectCardContainer} key={index}>
+              <div className={styles.projectCardContainer} key={index} data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">
                 <Link onClick={handleClick} to={`/projects/${project.name.toLocaleLowerCase().replace(/ /g, "-")}`}>
                   <Projectcard image={project.imageDesktop} name={project.name} />
                 </Link>

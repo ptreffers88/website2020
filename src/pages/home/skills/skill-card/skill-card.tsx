@@ -28,7 +28,7 @@ const SkillCard = (props: ISkillCardProps): JSX.Element => {
   }, [props.percentage]);
 
   return (
-    <div className={styles.skill}>
+    <div className={styles.skill} data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">
       <h3 className={styles.name}>{props.name}</h3>
       <div className={styles.progress} id="progress">
         <div className={styles.progressMeter} style={{ width: `${finalpercentage}% ` }} role="progressbar"></div>

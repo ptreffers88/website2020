@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import sal from "sal.js";
+import "sal.js/dist/sal.css";
 
 import { Header } from "./components/header/header";
 import { Home } from "./pages/home/home";
@@ -8,6 +10,9 @@ import { ProjectSingle } from "./pages/project-single/project-single";
 import { Footer } from "./components/footer/footer";
 
 const App = (): JSX.Element => {
+  useEffect(()=> {
+    sal()
+  },[]);
   return (
     <Router>
       <Header />

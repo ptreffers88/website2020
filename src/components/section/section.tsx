@@ -14,10 +14,11 @@ type ISectionSize = "medium" | "fullWidth";
 type ISectionBackground = "light" | "darker" | "darkest";
 
 const Section = (props: ISectionProps) => {
+
   return (
     <section className={`${styles.section} ${styles.gutterStandard} ${getStyleBackground(props.background)}`}>
       <div className={getSizeContainer(props.size || "medium")}>
-        {props.title && <h2>{props.title}</h2>}
+        {props.title && <h2 data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">{props.title}</h2>}
         {props.children}
       </div>
     </section>

@@ -9,7 +9,7 @@ import styles from "./skills.module.scss";
 const Skills = (): JSX.Element => {
   return (
     <Section background="light">
-      <h2>Skills die zorgen voor resultaat</h2>
+      <h2 data-sal="slide-up" data-sal-duration="750" data-sal-delay="700">Skills die zorgen voor resultaat</h2>
       <div className={styles.skillWrapper}>
         {skills && skills.length > 0 && (
           <>

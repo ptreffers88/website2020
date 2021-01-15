@@ -16,6 +16,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-svg": "^11.0.28",
+    "sal.js": "^0.8.2",
     "typescript": "^3.7.5"
   },
   "scripts": {
