@@ -7,22 +7,22 @@ export const skills = [
   {
     id: 2,
     name: "JavaScript (ES6)",
-    percentage: 30,
+    percentage: 60,
   },
   {
     id: 3,
     name: "React (Redux Toolkit)",
-    percentage: 20,
+    percentage: 40,
   },
   {
     id: 4,
-    name: "CSS3 / SASS (SCSS modules)",
+    name: "CSS3 / SASS (SCSS Modules)",
     percentage: 90,
   },
   {
     id: 5,
-    name: "SEO",
-    percentage: 90,
+    name: "Umbraco",
+    percentage: 75,
   },
   {
     id: 6,
@@ -31,8 +31,8 @@ export const skills = [
   },
   {
     id: 7,
-    name: "Photoshop",
-    percentage: 80,
+    name: "Photoshop / Adobe XD",
+    percentage: 60,
   },
   {
     id: 8,
@@ -43,5 +43,10 @@ export const skills = [
     id: 9,
     name: "WordPress (Theming)",
     percentage: 70,
+  },
+  {
+    id: 10,
+    name: "SEO",
+    percentage: 90,
   },
 ];
