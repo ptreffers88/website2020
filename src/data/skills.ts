@@ -21,7 +21,7 @@ export const skills = [
   },
   {
     id: 5,
-    name: "Umbraco",
+    name: "Umbraco (Razor  + .NET Core)",
     percentage: 75,
   },
   {
@@ -31,21 +31,26 @@ export const skills = [
   },
   {
     id: 7,
-    name: "Photoshop / Adobe XD",
+    name: "jQuery",
     percentage: 60,
   },
   {
     id: 8,
+    name: "Adobe Photoshop / XD",
+    percentage: 60,
+  },
+  {
+    id: 9,
     name: "Git / Github",
     percentage: 75,
   },
   {
-    id: 9,
+    id: 10,
     name: "WordPress (Theming)",
     percentage: 70,
   },
   {
-    id: 10,
+    id: 11,
     name: "SEO",
     percentage: 90,
   },
