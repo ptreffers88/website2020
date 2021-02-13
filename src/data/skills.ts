@@ -21,7 +21,7 @@ export const skills = [
   },
   {
     id: 5,
-    name: "Umbraco (Razor  + .NET Core)",
+    name: "Umbraco (C#  + Razor)",
     percentage: 75,
   },
   {
