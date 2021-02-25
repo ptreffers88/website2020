@@ -31,26 +31,21 @@ export const skills = [
   },
   {
     id: 7,
-    name: "jQuery",
-    percentage: 60,
-  },
-  {
-    id: 8,
     name: "Adobe Photoshop / XD",
     percentage: 60,
   },
   {
-    id: 9,
+    id: 8,
     name: "Git / Github",
     percentage: 75,
   },
   {
-    id: 10,
+    id: 9,
     name: "WordPress (Theming)",
     percentage: 70,
   },
   {
-    id: 11,
+    id: 10,
     name: "SEO",
     percentage: 90,
   },
